@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist Prediction</title>
+  </head>
+  <body>
+    <h1>Artist Prediction</h1>
+    <form action="/" method="post">
+      <label for="Age">Age:</label>
+      <input type="text" name="Age" required /><br />
+
+      <label for="Popularity">Popularity:</label>
+      <input type="text" name="Popularity" required /><br />
+
+      <input type="submit" value="Predict" />
+    </form>
+
+    {% if prediction %}
+    <script>
+      document.location.href = "/results";
+    </script>
+    {% endif %}
+  </body>
+</html>

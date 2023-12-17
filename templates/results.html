@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gender and Artist Prediction Results</title>
+  </head>
+  <body>
+    <h1>Gender and Artist Prediction Results</h1>
+    {% if gender and artist %}
+    <h2>Resultado da Classificação:</h2>
+    <p>Gênero: {{ gender }}</p>
+    <p>Artista Previsto: {{ artist }}</p>
+    {% else %}
+    <p>Nenhum resultado disponível.</p>
+    {% endif %}
+    <br />
+    <a href="/">Voltar ao formulário</a>
+  </body>
+</html>
